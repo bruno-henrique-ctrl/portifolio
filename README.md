@@ -5,7 +5,7 @@ O projeto apresenta minhas informações profissionais, habilidades, jornada na 
 
 A aplicação foi construída com **Next.js**, **React** e **TypeScript**.
 
-Ver Projeto online: 
+Ver Projeto online: https://portifolio-rho-sandy.vercel.app/
 
 ---
 
