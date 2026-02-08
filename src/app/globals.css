@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+:root {
+  --text: #222222;
+  --text-white: #fff;
+  --text-color: #647583;
+  --bg: #647583;
+  --bg2: #fff;
+  --content-bg: #ffffff46;
+  --shadow: rgba(0, 0, 0, 0.1);
+
+  --image: url('/imgs/bg.webp');
+}
+
+.dark {
+  --text: #e4e4e4;
+  --text-color: #77c8d9;
+  --bg: #0e0d0d;
+  --bg2: #1f2a33;
+  --content-bg: #0e0d0dc2;
+  --shadow: rgba(0, 0, 0, 0.3);
+
+  --image: url('/imgs/bg2.webp');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  background-image: var(--image);
+  background-size: cover;
+  background-position: center;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+label[data-sr-only] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@font-face {
+  font-family: "Naruto";
+  src: url("/font/naruto.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
